@@ -1,0 +1,7 @@
+2017-05-18 20:12:11,960 [INFO] from application in ForkJoinPool-1-worker-1 - Creating Pool for datasource 'default'
+2017-05-18 20:12:12,287 [INFO] from play.api.db.DefaultDBApi in ForkJoinPool-1-worker-1 - Database [default] connected at jdbc:mysql://localhost:3306/playdb
+2017-05-18 20:12:13,642 [INFO] from play.api.Play in ForkJoinPool-1-worker-1 - Application started (Dev)
+2017-05-18 20:14:43,289 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
+2017-05-18 20:14:43,488 [INFO] from application in application-akka.actor.default-dispatcher-5 - Creating Pool for datasource 'default'
+2017-05-18 20:14:43,498 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-5 - Database [default] connected at jdbc:mysql://localhost:3306/playdb
+2017-05-18 20:14:43,689 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
