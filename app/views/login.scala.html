@@ -1,0 +1,20 @@
+@(loginForm: play.data.Form[User])
+
+@main("Login"){
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Login</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+        @helper.form(action = routes.FormController.loginUser(), 'enctype -> "multipart/form-data"){
+            @helper.inputText(loginForm("email"), 'id -> "name", '_label -> "Email", 'class -> "form-control")
+            @helper.inputText(loginForm("password"), '_label -> "Password", 'class -> "form-control")
+            <button type="submit" class="btn btn-success" value="Anlegen" ><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Einloggen </button>
+        }
+        </div>
+    </div>
+
+}

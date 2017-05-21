@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/georg/Documents/projects/otten/otten/conf/routes
-// @DATE:Thu May 18 20:11:49 CEST 2017
+// @DATE:Sun May 21 19:11:25 CEST 2017
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
@@ -13,14 +13,14 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers {
 
-  // @LINE:27
+  // @LINE:15
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:27
+    // @LINE:15
     def versioned(file:Asset): Call = {
       implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[Asset]].unbind("file", file))
@@ -28,80 +28,92 @@ package controllers {
   
   }
 
-  // @LINE:22
-  class ReverseTagController(_prefix: => String) {
+  // @LINE:11
+  class ReverseCustomersController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:22
-    def list(): Call = {
+    // @LINE:11
+    def index(): Call = {
       import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "tag")
-    }
-  
-    // @LINE:23
-    def create(): Call = {
-      import ReverseRouteContext.empty
-      Call("POST", _prefix + { _defaultPrefix } + "tag")
+      Call("GET", _prefix + { _defaultPrefix } + "customers")
     }
   
   }
 
-  // @LINE:14
-  class ReverseWarehouseController(_prefix: => String) {
+  // @LINE:10
+  class ReverseWorkersController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:14
-    def create(): Call = {
+    // @LINE:10
+    def index(): Call = {
       import ReverseRouteContext.empty
-      Call("POST", _prefix + { _defaultPrefix } + "warehouse")
+      Call("GET", _prefix + { _defaultPrefix } + "workers")
     }
   
   }
 
-  // @LINE:17
-  class ReverseProductController(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:17
-    def list(): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "product")
-    }
-  
-    // @LINE:19
-    def create(): Call = {
-      import ReverseRouteContext.empty
-      Call("POST", _prefix + { _defaultPrefix } + "product")
-    }
-  
-    // @LINE:18
-    def show(id:Long): Call = {
-      import ReverseRouteContext.empty
-      Call("GET", _prefix + { _defaultPrefix } + "product/" + implicitly[PathBindable[Long]].unbind("id", id))
-    }
-  
-  }
-
-  // @LINE:6
+  // @LINE:8
   class ReverseHomeController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:6
+    // @LINE:8
     def index(): Call = {
       import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "home")
+    }
+  
+  }
+
+  // @LINE:6
+  class ReverseFormController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:6
+    def loginUser(): Call = {
+      import ReverseRouteContext.empty
       Call("GET", _prefix)
+    }
+  
+  }
+
+  // @LINE:7
+  class ReverseProjectsController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:7
+    def index(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "projects")
+    }
+  
+  }
+
+  // @LINE:9
+  class ReverseOttenController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:9
+    def index(): Call = {
+      import ReverseRouteContext.empty
+      Call("GET", _prefix + { _defaultPrefix } + "otten")
     }
   
   }

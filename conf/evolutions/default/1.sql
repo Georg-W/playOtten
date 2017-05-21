@@ -32,6 +32,13 @@ create table tag (
   constraint pk_tag primary key (tag_id)
 );
 
+create table user (
+  user_id                       bigint auto_increment not null,
+  email                         varchar(255),
+  password                      varchar(255),
+  constraint pk_user primary key (user_id)
+);
+
 create table warehouse (
   warehouse_id                  bigint auto_increment not null,
   name                          varchar(255),
@@ -75,6 +82,8 @@ drop table if exists product_tag;
 drop table if exists stock_item;
 
 drop table if exists tag;
+
+drop table if exists user;
 
 drop table if exists warehouse;
 

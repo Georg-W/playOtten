@@ -32,10 +32,10 @@ class navigation extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,
 Seq[Any](format.raw/*1.4*/("""
 
 """),format.raw/*3.1*/("""<div class="nav-item">
-    <a href=""""),_display_(/*4.15*/routes/*4.21*/.HomeController.index()),format.raw/*4.44*/(""""><i class="fa fa-building" aria-hidden="true"></i> Warehouse</a>
+    <a href=""""),_display_(/*4.15*/routes/*4.21*/.FormController.loginUser()),format.raw/*4.48*/(""""><i class="fa fa-building" aria-hidden="true"></i>Login</a>
 </div>
 <div class="nav-item">
-    <a href=""""),_display_(/*7.15*/routes/*7.21*/.ProductController.list()),format.raw/*7.46*/(""""><i class="fa fa-television" aria-hidden="true"></i> Produkte</a>
+    <a href=""""),_display_(/*7.15*/routes/*7.21*/.FormController.loginUser()),format.raw/*7.48*/(""""><i class="fa fa-building" aria-hidden="true"></i>Login</a>
 </div>
 
 
@@ -59,10 +59,10 @@ Seq[Any](format.raw/*1.4*/("""
 object navigation extends navigation_Scope0.navigation
               /*
                   -- GENERATED --
-                  DATE: Thu May 18 20:11:49 CEST 2017
+                  DATE: Sun May 21 19:11:44 CEST 2017
                   SOURCE: C:/Users/georg/Documents/projects/otten/otten/app/views/navigation.scala.html
-                  HASH: 55653c074dca32aab4c1b0f721d5cef884d36893
-                  MATRIX: 748->1|844->3|872->5|935->42|949->48|992->71|1128->181|1142->187|1187->212
+                  HASH: 71a35d199366a779ffa969b081273c2260c1a3f1
+                  MATRIX: 748->1|844->3|872->5|935->42|949->48|996->75|1127->180|1141->186|1188->213
                   LINES: 27->1|32->1|34->3|35->4|35->4|35->4|38->7|38->7|38->7
                   -- GENERATED --
               */

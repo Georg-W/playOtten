@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/georg/Documents/projects/otten/otten/conf/routes
-// @DATE:Thu May 18 20:11:49 CEST 2017
+// @DATE:Sun May 21 19:11:25 CEST 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -15,7 +15,7 @@ import _root_.play.libs.F
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:27
+  // @LINE:15
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -23,7 +23,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:27
+    // @LINE:15
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -35,97 +35,47 @@ package controllers.javascript {
   
   }
 
-  // @LINE:22
-  class ReverseTagController(_prefix: => String) {
+  // @LINE:11
+  class ReverseCustomersController(_prefix: => String) {
 
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:22
-    def list: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.TagController.list",
+    // @LINE:11
+    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.CustomersController.index",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "tag"})
-        }
-      """
-    )
-  
-    // @LINE:23
-    def create: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.TagController.create",
-      """
-        function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "tag"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "customers"})
         }
       """
     )
   
   }
 
-  // @LINE:14
-  class ReverseWarehouseController(_prefix: => String) {
+  // @LINE:10
+  class ReverseWorkersController(_prefix: => String) {
 
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:14
-    def create: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.WarehouseController.create",
+    // @LINE:10
+    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.WorkersController.index",
       """
         function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "warehouse"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "workers"})
         }
       """
     )
   
   }
 
-  // @LINE:17
-  class ReverseProductController(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:17
-    def list: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.ProductController.list",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "product"})
-        }
-      """
-    )
-  
-    // @LINE:19
-    def create: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.ProductController.create",
-      """
-        function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "product"})
-        }
-      """
-    )
-  
-    // @LINE:18
-    def show: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.ProductController.show",
-      """
-        function(id0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "product/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id0)})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:6
+  // @LINE:8
   class ReverseHomeController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -133,12 +83,72 @@ package controllers.javascript {
     }
 
   
-    // @LINE:6
+    // @LINE:8
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.index",
       """
         function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "home"})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:6
+  class ReverseFormController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:6
+    def loginUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.FormController.loginUser",
+      """
+        function() {
           return _wA({method:"GET", url:"""" + _prefix + """"})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:7
+  class ReverseProjectsController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:7
+    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.ProjectsController.index",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "projects"})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:9
+  class ReverseOttenController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:9
+    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.OttenController.index",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "otten"})
         }
       """
     )

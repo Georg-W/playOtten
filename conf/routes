@@ -3,24 +3,12 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           controllers.HomeController.index
-
-
-#Forms
-
-
-
-#Warehouse
-POST    /warehouse                  controllers.WarehouseController.create()
-
-#Product
-GET     /product                    controllers.ProductController.list()
-GET     /product/:id                controllers.ProductController.show(id: Long)
-POST    /product                    controllers.ProductController.create()
-
-#Tag
-GET     /tag                        controllers.TagController.list()
-POST    /tag                        controllers.TagController.create()
+GET     /                           controllers.FormController.loginUser()
+GET     /projects                   controllers.ProjectsController.index()
+GET     /home                       controllers.HomeController.index()
+GET     /otten                      controllers.OttenController.index()
+GET     /workers                    controllers.WorkersController.index()
+GET     /customers                  controllers.CustomersController.index()
 
 
 # Map static resources from the /public folder to the /assets URL path

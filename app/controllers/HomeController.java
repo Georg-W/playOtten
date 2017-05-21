@@ -1,6 +1,5 @@
 package controllers;
 
-import models.Warehouse;
 import play.mvc.*;
 
 import java.util.List;
@@ -18,9 +17,7 @@ public class HomeController extends Controller {
      * <code>GET</code> request with a path of <code>/</code>.
      */
     public Result index() {
-
-        List<Warehouse> warehouseList = Warehouse.find.all();
-        return ok(views.html.index.render(warehouseList));
+        return ok();
     }
 
 }
