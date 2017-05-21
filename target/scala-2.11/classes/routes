@@ -3,9 +3,9 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           controllers.FormController.loginUser()
+GET     /                           controllers.HomeController.index()
+GET     /login                      controllers.FormController.loginUser()
 GET     /projects                   controllers.ProjectsController.index()
-GET     /home                       controllers.HomeController.index()
 GET     /otten                      controllers.OttenController.index()
 GET     /workers                    controllers.WorkersController.index()
 GET     /customers                  controllers.CustomersController.index()

@@ -1,22 +1,5 @@
-@(warehouseList: List[Warehouse])
+@()
 
-@main("lager") {
-  <h1>heyy</h1>
-  @if(warehouseList.size() > 0) {
-    @for(warehouse <- warehouseList) {
-      <div class="warehouse-item">
-      @warehouse
-      </div>
-    }
-  } else{
-    <div class="warehouse-item">
-      Kein Warehouse vorhanden
-    </div>
-  }
-
-  <div class="new-holder">
-    <a class="btn btn-success"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Neues Lagerhaus anlegen</a>
-  </div>
-
-
+@main("Home") {
+  <h1>Home</h1>
 }

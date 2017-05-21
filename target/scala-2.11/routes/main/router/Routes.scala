@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/georg/Documents/projects/otten/otten/conf/routes
-// @DATE:Sun May 21 19:11:25 CEST 2017
+// @DATE:Sun May 21 20:58:19 CEST 2017
 
 package router
 
@@ -17,11 +17,11 @@ import _root_.play.libs.F
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
-  FormController_4: controllers.FormController,
-  // @LINE:7
-  ProjectsController_6: controllers.ProjectsController,
-  // @LINE:8
   HomeController_1: controllers.HomeController,
+  // @LINE:7
+  FormController_4: controllers.FormController,
+  // @LINE:8
+  ProjectsController_6: controllers.ProjectsController,
   // @LINE:9
   OttenController_3: controllers.OttenController,
   // @LINE:10
@@ -36,11 +36,11 @@ class Routes(
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
-    FormController_4: controllers.FormController,
-    // @LINE:7
-    ProjectsController_6: controllers.ProjectsController,
-    // @LINE:8
     HomeController_1: controllers.HomeController,
+    // @LINE:7
+    FormController_4: controllers.FormController,
+    // @LINE:8
+    ProjectsController_6: controllers.ProjectsController,
     // @LINE:9
     OttenController_3: controllers.OttenController,
     // @LINE:10
@@ -49,13 +49,13 @@ class Routes(
     CustomersController_0: controllers.CustomersController,
     // @LINE:15
     Assets_5: controllers.Assets
-  ) = this(errorHandler, FormController_4, ProjectsController_6, HomeController_1, OttenController_3, WorkersController_2, CustomersController_0, Assets_5, "/")
+  ) = this(errorHandler, HomeController_1, FormController_4, ProjectsController_6, OttenController_3, WorkersController_2, CustomersController_0, Assets_5, "/")
 
   import ReverseRouteContext.empty
 
   def withPrefix(prefix: String): Routes = {
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, FormController_4, ProjectsController_6, HomeController_1, OttenController_3, WorkersController_2, CustomersController_0, Assets_5, prefix)
+    new Routes(errorHandler, HomeController_1, FormController_4, ProjectsController_6, OttenController_3, WorkersController_2, CustomersController_0, Assets_5, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -63,9 +63,9 @@ class Routes(
   }
 
   def documentation = List(
-    ("""GET""", this.prefix, """controllers.FormController.loginUser()"""),
+    ("""GET""", this.prefix, """controllers.HomeController.index()"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.FormController.loginUser()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """projects""", """controllers.ProjectsController.index()"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """home""", """controllers.HomeController.index()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """otten""", """controllers.OttenController.index()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """workers""", """controllers.WorkersController.index()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """customers""", """controllers.CustomersController.index()"""),
@@ -78,15 +78,15 @@ class Routes(
 
 
   // @LINE:6
-  private[this] lazy val controllers_FormController_loginUser0_route = Route("GET",
+  private[this] lazy val controllers_HomeController_index0_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix)))
   )
-  private[this] lazy val controllers_FormController_loginUser0_invoker = createInvoker(
-    FormController_4.loginUser(),
+  private[this] lazy val controllers_HomeController_index0_invoker = createInvoker(
+    HomeController_1.index(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
-      "controllers.FormController",
-      "loginUser",
+      "controllers.HomeController",
+      "index",
       Nil,
       "GET",
       """ An example controller showing a sample home page""",
@@ -95,10 +95,27 @@ class Routes(
   )
 
   // @LINE:7
-  private[this] lazy val controllers_ProjectsController_index1_route = Route("GET",
+  private[this] lazy val controllers_FormController_loginUser1_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login")))
+  )
+  private[this] lazy val controllers_FormController_loginUser1_invoker = createInvoker(
+    FormController_4.loginUser(),
+    HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.FormController",
+      "loginUser",
+      Nil,
+      "GET",
+      """""",
+      this.prefix + """login"""
+    )
+  )
+
+  // @LINE:8
+  private[this] lazy val controllers_ProjectsController_index2_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("projects")))
   )
-  private[this] lazy val controllers_ProjectsController_index1_invoker = createInvoker(
+  private[this] lazy val controllers_ProjectsController_index2_invoker = createInvoker(
     ProjectsController_6.index(),
     HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -108,23 +125,6 @@ class Routes(
       "GET",
       """""",
       this.prefix + """projects"""
-    )
-  )
-
-  // @LINE:8
-  private[this] lazy val controllers_HomeController_index2_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("home")))
-  )
-  private[this] lazy val controllers_HomeController_index2_invoker = createInvoker(
-    HomeController_1.index(),
-    HandlerDef(this.getClass.getClassLoader,
-      "router",
-      "controllers.HomeController",
-      "index",
-      Nil,
-      "GET",
-      """""",
-      this.prefix + """home"""
     )
   )
 
@@ -200,21 +200,21 @@ class Routes(
   def routes: PartialFunction[RequestHeader, Handler] = {
   
     // @LINE:6
-    case controllers_FormController_loginUser0_route(params) =>
+    case controllers_HomeController_index0_route(params) =>
       call { 
-        controllers_FormController_loginUser0_invoker.call(FormController_4.loginUser())
+        controllers_HomeController_index0_invoker.call(HomeController_1.index())
       }
   
     // @LINE:7
-    case controllers_ProjectsController_index1_route(params) =>
+    case controllers_FormController_loginUser1_route(params) =>
       call { 
-        controllers_ProjectsController_index1_invoker.call(ProjectsController_6.index())
+        controllers_FormController_loginUser1_invoker.call(FormController_4.loginUser())
       }
   
     // @LINE:8
-    case controllers_HomeController_index2_route(params) =>
+    case controllers_ProjectsController_index2_route(params) =>
       call { 
-        controllers_HomeController_index2_invoker.call(HomeController_1.index())
+        controllers_ProjectsController_index2_invoker.call(ProjectsController_6.index())
       }
   
     // @LINE:9

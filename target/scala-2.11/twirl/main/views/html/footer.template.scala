@@ -35,7 +35,7 @@ Seq[Any](format.raw/*1.4*/("""
     <div class="col-xs-6">
     </div>
     <div class="col-xs-6 right-footer">
-        &copy 2017, FH Kufstein
+        &copy 2017, Ottify
     </div>
 </div>"""))
       }
@@ -57,9 +57,9 @@ Seq[Any](format.raw/*1.4*/("""
 object footer extends footer_Scope0.footer
               /*
                   -- GENERATED --
-                  DATE: Thu May 18 20:11:49 CEST 2017
+                  DATE: Sun May 21 21:00:25 CEST 2017
                   SOURCE: C:/Users/georg/Documents/projects/otten/otten/app/views/footer.scala.html
-                  HASH: 530efe40dc52afc24a01ef5f2d3647b572568b54
+                  HASH: 05391ce0fc1d9f993b8666bb46f6d58aee385348
                   MATRIX: 740->1|836->3|864->5
                   LINES: 27->1|32->1|34->3
                   -- GENERATED --

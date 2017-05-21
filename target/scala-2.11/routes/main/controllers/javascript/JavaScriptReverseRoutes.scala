@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/georg/Documents/projects/otten/otten/conf/routes
-// @DATE:Sun May 21 19:11:25 CEST 2017
+// @DATE:Sun May 21 20:58:19 CEST 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -75,7 +75,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:8
+  // @LINE:6
   class ReverseHomeController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -83,29 +83,9 @@ package controllers.javascript {
     }
 
   
-    // @LINE:8
+    // @LINE:6
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.index",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "home"})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:6
-  class ReverseFormController(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:6
-    def loginUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.FormController.loginUser",
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + """"})
@@ -116,7 +96,7 @@ package controllers.javascript {
   }
 
   // @LINE:7
-  class ReverseProjectsController(_prefix: => String) {
+  class ReverseFormController(_prefix: => String) {
 
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
@@ -124,6 +104,26 @@ package controllers.javascript {
 
   
     // @LINE:7
+    def loginUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.FormController.loginUser",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "login"})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:8
+  class ReverseProjectsController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:8
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ProjectsController.index",
       """

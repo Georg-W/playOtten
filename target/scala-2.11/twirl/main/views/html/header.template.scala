@@ -31,7 +31,7 @@ class header extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Form
 
 Seq[Any](format.raw/*1.4*/("""
 
-"""),format.raw/*3.1*/("""<h1>Lagerhaus Verwaltung</h1>"""))
+"""),format.raw/*3.1*/("""<h1>Ottify</h1>"""))
       }
     }
   }
@@ -51,9 +51,9 @@ Seq[Any](format.raw/*1.4*/("""
 object header extends header_Scope0.header
               /*
                   -- GENERATED --
-                  DATE: Thu May 18 20:11:49 CEST 2017
+                  DATE: Sun May 21 21:00:25 CEST 2017
                   SOURCE: C:/Users/georg/Documents/projects/otten/otten/app/views/header.scala.html
-                  HASH: a9381f5cf6fc2ce863b97557e728eeea078661d9
+                  HASH: 9ffec871c2b1acfa5361e7b0791dc04c6a01d3dd
                   MATRIX: 740->1|836->3|864->5
                   LINES: 27->1|32->1|34->3
                   -- GENERATED --
