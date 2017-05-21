@@ -9,6 +9,6 @@ import java.util.List;
  */
 public class ProjectsController extends Controller{
     public Result index() {
-        return ok();
+        return ok(views.html.projects.render());
     }
 }

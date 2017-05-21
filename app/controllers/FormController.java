@@ -17,8 +17,4 @@ public class FormController extends Controller {
         Form<User> loginForm = formFactory.form(User.class);
         return ok(views.html.login.render(loginForm));
     }
-    public Result login(){
-        Form<User> loginForm = formFactory.form(User.class);
-        return ok(views.html.login.render(loginForm));
-    }
 }

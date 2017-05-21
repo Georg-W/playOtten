@@ -7,6 +7,6 @@ import play.mvc.*;
  */
 public class OttenController extends Controller{
     public Result index() {
-        return ok();
+        return ok(views.html.otten.render());
     }
 }
