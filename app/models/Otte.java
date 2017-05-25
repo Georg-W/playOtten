@@ -3,11 +3,13 @@ package models;
 import com.avaje.ebean.Model;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 
 /**
  * Created by georg on 21.05.2017.
  */
+@Entity
 public class Otte extends Model{
     @Id
     @Column(name="worker_id")

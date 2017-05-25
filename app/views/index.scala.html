@@ -1,8 +1,8 @@
-@(warehouseList: List[Warehouse])
+@(projectList: List[Project])
 
 @main("Home") {
   <h1>Home</h1>
-  @if(warehouseList.size() > 0) {
+  @if(projectList.size() > 0) {
 
     <div class="row">
       <div class="col-xs-12">
@@ -10,21 +10,12 @@
           <thead>
             <tr>
               <td>Bezeichnung</td>
-              <td>Adresse</td>
-              <td></td>
             </tr>
           </thead>
           <tbody>
-          @for(warehouse <- warehouseList){
+          @for(project <- projectList){
             <tr>
-              <td>@warehouse.getName()</td>
-              <td>@warehouse.getStreet, @warehouse.getPostalCode @warehouse.getCity()</td>
-              <td>
-                <a href="@routes.WarehouseController.show(warehouse.getId())" class="btn btn-default"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                <a href="@routes.WarehouseController.delete(warehouse.getId())" class="btn btn-danger"><i class="fa fa-minus" aria-hidden="true"></i></a>
-              </td>
-
-
+                <td>heyy</td>
             </tr>
 
           }
@@ -34,8 +25,8 @@
 
     </div>
   } else{
-    <div class="warehouse-item">
-      Kein Warehouse vorhanden
+    <div class="project-item">
+      Kein Project vorhanden
     </div>
   }
 }

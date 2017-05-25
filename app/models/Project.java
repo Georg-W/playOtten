@@ -3,10 +3,12 @@ package models;
 import com.avaje.ebean.Model;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 /**
  * Created by georg on 21.05.2017.
  */
+@Entity
 public class Project extends Model{
     @Id
     @Column(name="project_id")
