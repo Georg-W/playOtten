@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/georg/Documents/projects/otten/otten/conf/routes
-// @DATE:Sun May 21 20:58:19 CEST 2017
+// @DATE:Thu May 25 11:28:53 CEST 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -15,7 +15,7 @@ import _root_.play.libs.F
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:15
+  // @LINE:17
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -23,7 +23,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:15
+    // @LINE:17
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -75,20 +75,20 @@ package controllers.javascript {
   
   }
 
-  // @LINE:6
-  class ReverseHomeController(_prefix: => String) {
+  // @LINE:14
+  class ReverseUserController(_prefix: => String) {
 
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:6
-    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.index",
+    // @LINE:14
+    def create: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.UserController.create",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + """"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "user"})
         }
       """
     )
@@ -96,7 +96,7 @@ package controllers.javascript {
   }
 
   // @LINE:7
-  class ReverseFormController(_prefix: => String) {
+  class ReverseHomeController(_prefix: => String) {
 
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
@@ -104,11 +104,31 @@ package controllers.javascript {
 
   
     // @LINE:7
+    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.index",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "home"})
+        }
+      """
+    )
+  
+  }
+
+  // @LINE:6
+  class ReverseFormController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:6
     def loginUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.FormController.loginUser",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "login"})
+          return _wA({method:"GET", url:"""" + _prefix + """"})
         }
       """
     )

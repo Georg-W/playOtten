@@ -40,7 +40,7 @@ Seq[Any](format.raw/*1.35*/("""
 
     <div class="row">
         <div class="col-xs-12">
-        """),_display_(/*12.10*/helper/*12.16*/.form(action = routes.FormController.loginUser(), 'enctype -> "multipart/form-data")/*12.100*/{_display_(Seq[Any](format.raw/*12.101*/("""
+        """),_display_(/*12.10*/helper/*12.16*/.form(action = routes.UserController.create(), 'enctype -> "multipart/form-data")/*12.97*/{_display_(Seq[Any](format.raw/*12.98*/("""
             """),_display_(/*13.14*/helper/*13.20*/.inputText(loginForm("email"), 'id -> "name", '_label -> "Email", 'class -> "form-control")),format.raw/*13.111*/("""
             """),_display_(/*14.14*/helper/*14.20*/.inputText(loginForm("password"), '_label -> "Password", 'class -> "form-control")),format.raw/*14.102*/("""
             """),format.raw/*15.13*/("""<button type="submit" class="btn btn-success" value="Anlegen" ><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Einloggen </button>
@@ -68,10 +68,10 @@ Seq[Any](format.raw/*1.35*/("""
 object login extends login_Scope0.login
               /*
                   -- GENERATED --
-                  DATE: Sun May 21 19:10:38 CEST 2017
+                  DATE: Thu May 25 11:24:10 CEST 2017
                   SOURCE: C:/Users/georg/Documents/projects/otten/otten/app/views/login.scala.html
-                  HASH: 06c2afba6257eb9280a5cff39e305daf0c2d22ae
-                  MATRIX: 759->1|887->34|917->39|938->52|976->53|1008->59|1210->234|1225->240|1319->324|1359->325|1401->340|1416->346|1529->437|1571->452|1586->458|1690->540|1732->554|1929->720|1966->730
+                  HASH: 0a9d70b89b199f911ab8b99be2ae9222e4ee9b66
+                  MATRIX: 759->1|887->34|917->39|938->52|976->53|1008->59|1210->234|1225->240|1315->321|1354->322|1396->337|1411->343|1524->434|1566->449|1581->455|1685->537|1727->551|1924->717|1961->727
                   LINES: 27->1|32->1|34->3|34->3|34->3|35->4|43->12|43->12|43->12|43->12|44->13|44->13|44->13|45->14|45->14|45->14|46->15|47->16|48->17
                   -- GENERATED --
               */
