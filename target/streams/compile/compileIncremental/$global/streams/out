@@ -1,4 +1,4 @@
-[0m[[0mdebug[0m] [0m[naha] Invalidating C:\Users\georg\Documents\projects\otten\otten\target\scala-2.11\classes\controllers\routes.class: stamp changed from lastModified(1495704447288) to lastModified(1495704540861)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating C:\Users\georg\Documents\projects\otten\otten\target\scala-2.11\classes\controllers\routes.class: stamp changed from lastModified(1495704540861) to lastModified(1495704796862)[0m
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
 [0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
@@ -16,9 +16,9 @@
 [0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(C:\Users\georg\Documents\projects\otten\otten\app\controllers\UserController.java)[0m
 [0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(C:\Users\georg\Documents\projects\otten\otten\app\controllers\UserController.java)[0m
 [0m[[0minfo[0m] [0mCompiling 1 Java source to C:\Users\georg\Documents\projects\otten\otten\target\scala-2.11\classes...[0m
-[0m[[0mdebug[0m] [0mJava compilation took 2.400797334 s[0m
-[0m[[0mdebug[0m] [0mJava analysis took 0.120606667 s[0m
-[0m[[0mdebug[0m] [0mJava compile + analysis took 2.606064445 s[0m
+[0m[[0mdebug[0m] [0mJava compilation took 2.626724 s[0m
+[0m[[0mdebug[0m] [0mJava analysis took 0.109628 s[0m
+[0m[[0mdebug[0m] [0mJava compile + analysis took 2.787928889 s[0m
 [0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
 [0m[[0mdebug[0m] [0m[naha] 	Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m

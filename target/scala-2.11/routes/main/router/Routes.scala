@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/georg/Documents/projects/otten/otten/conf/routes
-// @DATE:Thu May 25 11:28:53 CEST 2017
+// @DATE:Thu May 25 11:33:09 CEST 2017
 
 package router
 
@@ -18,19 +18,19 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
   FormController_5: controllers.FormController,
-  // @LINE:7
-  HomeController_1: controllers.HomeController,
-  // @LINE:8
-  ProjectsController_7: controllers.ProjectsController,
   // @LINE:9
+  HomeController_1: controllers.HomeController,
+  // @LINE:12
+  ProjectsController_7: controllers.ProjectsController,
+  // @LINE:15
   OttenController_4: controllers.OttenController,
-  // @LINE:10
+  // @LINE:18
   WorkersController_2: controllers.WorkersController,
-  // @LINE:11
+  // @LINE:21
   CustomersController_0: controllers.CustomersController,
-  // @LINE:14
+  // @LINE:24
   UserController_3: controllers.UserController,
-  // @LINE:17
+  // @LINE:28
   Assets_6: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -39,19 +39,19 @@ class Routes(
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
     FormController_5: controllers.FormController,
-    // @LINE:7
-    HomeController_1: controllers.HomeController,
-    // @LINE:8
-    ProjectsController_7: controllers.ProjectsController,
     // @LINE:9
+    HomeController_1: controllers.HomeController,
+    // @LINE:12
+    ProjectsController_7: controllers.ProjectsController,
+    // @LINE:15
     OttenController_4: controllers.OttenController,
-    // @LINE:10
+    // @LINE:18
     WorkersController_2: controllers.WorkersController,
-    // @LINE:11
+    // @LINE:21
     CustomersController_0: controllers.CustomersController,
-    // @LINE:14
+    // @LINE:24
     UserController_3: controllers.UserController,
-    // @LINE:17
+    // @LINE:28
     Assets_6: controllers.Assets
   ) = this(errorHandler, FormController_5, HomeController_1, ProjectsController_7, OttenController_4, WorkersController_2, CustomersController_0, UserController_3, Assets_6, "/")
 
@@ -94,12 +94,12 @@ class Routes(
       "loginUser",
       Nil,
       "GET",
-      """ An example controller showing a sample home page""",
+      """Forms""",
       this.prefix + """"""
     )
   )
 
-  // @LINE:7
+  // @LINE:9
   private[this] lazy val controllers_HomeController_index1_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("home")))
   )
@@ -111,12 +111,12 @@ class Routes(
       "index",
       Nil,
       "GET",
-      """""",
+      """Home""",
       this.prefix + """home"""
     )
   )
 
-  // @LINE:8
+  // @LINE:12
   private[this] lazy val controllers_ProjectsController_index2_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("projects")))
   )
@@ -128,12 +128,12 @@ class Routes(
       "index",
       Nil,
       "GET",
-      """""",
+      """Projects""",
       this.prefix + """projects"""
     )
   )
 
-  // @LINE:9
+  // @LINE:15
   private[this] lazy val controllers_OttenController_index3_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("otten")))
   )
@@ -145,12 +145,12 @@ class Routes(
       "index",
       Nil,
       "GET",
-      """""",
+      """Otten""",
       this.prefix + """otten"""
     )
   )
 
-  // @LINE:10
+  // @LINE:18
   private[this] lazy val controllers_WorkersController_index4_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("workers")))
   )
@@ -162,12 +162,12 @@ class Routes(
       "index",
       Nil,
       "GET",
-      """""",
+      """Workers""",
       this.prefix + """workers"""
     )
   )
 
-  // @LINE:11
+  // @LINE:21
   private[this] lazy val controllers_CustomersController_index5_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("customers")))
   )
@@ -179,12 +179,12 @@ class Routes(
       "index",
       Nil,
       "GET",
-      """""",
+      """Costumers""",
       this.prefix + """customers"""
     )
   )
 
-  // @LINE:14
+  // @LINE:24
   private[this] lazy val controllers_UserController_create6_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("user")))
   )
@@ -201,7 +201,7 @@ class Routes(
     )
   )
 
-  // @LINE:17
+  // @LINE:28
   private[this] lazy val controllers_Assets_versioned7_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
@@ -227,43 +227,43 @@ class Routes(
         controllers_FormController_loginUser0_invoker.call(FormController_5.loginUser())
       }
   
-    // @LINE:7
+    // @LINE:9
     case controllers_HomeController_index1_route(params) =>
       call { 
         controllers_HomeController_index1_invoker.call(HomeController_1.index())
       }
   
-    // @LINE:8
+    // @LINE:12
     case controllers_ProjectsController_index2_route(params) =>
       call { 
         controllers_ProjectsController_index2_invoker.call(ProjectsController_7.index())
       }
   
-    // @LINE:9
+    // @LINE:15
     case controllers_OttenController_index3_route(params) =>
       call { 
         controllers_OttenController_index3_invoker.call(OttenController_4.index())
       }
   
-    // @LINE:10
+    // @LINE:18
     case controllers_WorkersController_index4_route(params) =>
       call { 
         controllers_WorkersController_index4_invoker.call(WorkersController_2.index())
       }
   
-    // @LINE:11
+    // @LINE:21
     case controllers_CustomersController_index5_route(params) =>
       call { 
         controllers_CustomersController_index5_invoker.call(CustomersController_0.index())
       }
   
-    // @LINE:14
+    // @LINE:24
     case controllers_UserController_create6_route(params) =>
       call { 
         controllers_UserController_create6_invoker.call(UserController_3.create())
       }
   
-    // @LINE:17
+    // @LINE:28
     case controllers_Assets_versioned7_route(params) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
         controllers_Assets_versioned7_invoker.call(Assets_6.versioned(path, file))

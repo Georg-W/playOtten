@@ -81,3 +81,7 @@ play.sbt.PlayExceptions$CompilationException: Compilation error[value UserContro
 2017-05-25 11:29:08,905 [INFO] from application in application-akka.actor.default-dispatcher-10 - Creating Pool for datasource 'default'
 2017-05-25 11:29:08,925 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-10 - Database [default] connected at jdbc:mysql://localhost:3306/playdb
 2017-05-25 11:29:09,357 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-10 - Application started (Dev)
+2017-05-25 11:33:24,555 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
+2017-05-25 11:33:24,936 [INFO] from application in application-akka.actor.default-dispatcher-8 - Creating Pool for datasource 'default'
+2017-05-25 11:33:24,960 [INFO] from play.api.db.DefaultDBApi in application-akka.actor.default-dispatcher-8 - Database [default] connected at jdbc:mysql://localhost:3306/playdb
+2017-05-25 11:33:25,444 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
