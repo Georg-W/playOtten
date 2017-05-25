@@ -14,7 +14,7 @@ body{
 }
 
 a{
-    color: #757575;
+    color: #FFFFFF;
 }
 
 a:hover{
@@ -29,7 +29,7 @@ a:hover{
 
 .header{
     height: 80px;
-    background-color: #AFB42B;
+    background-color: #009688;
     color: #ffffff;
     padding-left: 30px;
 }
@@ -37,7 +37,7 @@ a:hover{
 .navigation{
     padding-left: 30px;
     padding-top: 30px;
-    background-color: #CDDC39;
+    background-color: #004D40;
     min-height: 89vh !important;
 }
 
@@ -55,7 +55,7 @@ a:hover{
 
 .footer{
     height: 50px;
-    background-color: #AFB42B;
+    background-color: #009688;
     color: #ffffff;
     line-height: 50px;
     padding-left: 30px;
