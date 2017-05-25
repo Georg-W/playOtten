@@ -21,15 +21,15 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[List[Project],play.twirl.api.HtmlFormat.Appendable] {
+class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[List[Project],List[Worker],play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(projectList: List[Project]):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(projectList: List[Project], workerList: List[Worker]):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.30*/("""
+Seq[Any](format.raw/*1.56*/("""
 
 """),_display_(/*3.2*/main("Home")/*3.14*/ {_display_(Seq[Any](format.raw/*3.16*/("""
   """),format.raw/*4.3*/("""<h1>Home</h1>
@@ -66,9 +66,9 @@ Seq[Any](format.raw/*1.30*/("""
     }
   }
 
-  def render(projectList:List[Project]): play.twirl.api.HtmlFormat.Appendable = apply(projectList)
+  def render(projectList:List[Project],workerList:List[Worker]): play.twirl.api.HtmlFormat.Appendable = apply(projectList,workerList)
 
-  def f:((List[Project]) => play.twirl.api.HtmlFormat.Appendable) = (projectList) => apply(projectList)
+  def f:((List[Project],List[Worker]) => play.twirl.api.HtmlFormat.Appendable) = (projectList,workerList) => apply(projectList,workerList)
 
   def ref: this.type = this
 
@@ -81,10 +81,10 @@ Seq[Any](format.raw/*1.30*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Thu May 25 13:18:21 CEST 2017
+                  DATE: Thu May 25 15:07:20 CEST 2017
                   SOURCE: C:/Users/georg/Documents/projects/otten/otten/app/views/index.scala.html
-                  HASH: 468824f5d6b3f7d56800619552310443c65395a7
-                  MATRIX: 752->1|875->29|903->32|923->44|962->46|991->49|1033->66|1067->92|1106->94|1138->100|1391->326|1434->353|1473->354|1514->367|1610->432|1649->443|1721->498|1733->502|1772->503|1804->508|1904->578|1936->580
+                  HASH: d4782e5a34f7d61903c7eb0a15b4559f43f9c093
+                  MATRIX: 765->1|914->55|942->58|962->70|1001->72|1030->75|1072->92|1106->118|1145->120|1177->126|1430->352|1473->379|1512->380|1553->393|1649->458|1688->469|1760->524|1772->528|1811->529|1843->534|1943->604|1975->606
                   LINES: 27->1|32->1|34->3|34->3|34->3|35->4|36->5|36->5|36->5|38->7|47->16|47->16|47->16|48->17|52->21|53->22|58->27|58->27|58->27|59->28|62->31|63->32
                   -- GENERATED --
               */

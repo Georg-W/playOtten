@@ -31,11 +31,11 @@ create table task (
   constraint pk_task primary key (task_id)
 );
 
-create table otten (
-  otten_id                      bigint auto_increment not null,
+create table otte (
+  otte_id                      bigint auto_increment not null,
   name                          varchar(255),
   rasse                         varchar(255),
-  constraint pk_otten primary key (otten_id)
+  constraint pk_otte primary key (otte_id)
 );
 
 create table user (

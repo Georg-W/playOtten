@@ -12,7 +12,7 @@ import javax.persistence.Id;
 @Entity
 public class Otte extends Model{
     @Id
-    @Column(name="worker_id")
+    @Column(name="otte_id")
 
     private Long id;
     private String name;

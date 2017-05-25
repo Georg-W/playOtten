@@ -1,3 +1,30 @@
+@(workerList: List[Worker])
+
 @main("Workers"){
     <h1>Workers</h1>
+    @if(workerList.size() > 0) {
+        <div class="row">
+            <div class="col-xs-12">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <td>Vorname</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @for(worker <- workerList){
+                        <tr>
+                            <td>@worker.getPrename()</td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    } else {
+        <div class="project-item">
+            Kein Worker vorhanden
+        </div>
+    }
 }

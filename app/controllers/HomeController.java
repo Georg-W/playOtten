@@ -19,8 +19,9 @@ public class HomeController extends Controller {
      */
     public Result index() {
         List<Project> projectList = Project.find.all();
+        List<Worker> workerList = Worker.find.all();
 
-        return ok(views.html.index.render(projectList));
+        return ok(views.html.index.render(projectList, workerList));
     }
 
 }
