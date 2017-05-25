@@ -4,12 +4,14 @@
 
 #Forms
 GET     /                           controllers.FormController.loginUser()
+GET     /project                    controllers.FormController.addProject()
 
 #Home
 GET     /home                       controllers.HomeController.index()
 
 #Projects
 GET     /projects                   controllers.ProjectsController.index()
+POST    /projects                   controllers.ProjectsController.create()
 
 #Otten
 GET     /otten                      controllers.OttenController.index()

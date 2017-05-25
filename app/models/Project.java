@@ -5,6 +5,8 @@ import com.avaje.ebean.Model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Transient;
+
 /**
  * Created by georg on 21.05.2017.
  */
@@ -18,6 +20,9 @@ public class Project extends Model{
     private Task[] tasks;
     private Customer customer;
     private int duration;
+
+    @Transient
+    private String tmpCustomer;
 
     public static Finder<Long, Project> find = new Finder<Long, Project>(Project.class);
 
@@ -67,5 +72,13 @@ public class Project extends Model{
 
     public void setDuration(int duration) {
         this.duration = duration;
+    }
+
+    public String getTmpCustomer() {
+        return tmpCustomer;
+    }
+
+    public void setTmpCustomer(String tmpCustomer) {
+        this.tmpCustomer = tmpCustomer;
     }
 }

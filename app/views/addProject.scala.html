@@ -1,0 +1,26 @@
+@(projectForm: play.data.Form[Project], customerList: List[Customer])
+
+@main("Project"){
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Project</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+        @helper.form(action = routes.ProjectsController.create(), 'enctype -> "multipart/form-data"){
+            @helper.inputText(projectForm("name"), 'id -> "name", '_label -> "name", 'class -> "form-control")
+            @helper.inputText(projectForm("duration"), '_label -> "duration", 'class -> "form-control",  'type -> "number")
+            @helper.select(
+                field = projectForm("TmpCustomer"),
+                options = (customerList.map(customer => customer.getId().toString() -> customer.getPrename())),
+                'id -> "customer",
+                '_label -> "customer",
+                'class -> "form-control")
+            <button type="submit" class="btn btn-success" value="Anlegen" ><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> Add </button>
+        }
+        </div>
+    </div>
+
+}
