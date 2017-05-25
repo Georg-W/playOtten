@@ -17,6 +17,8 @@ public class Project extends Model{
     private Customer customer;
     private int duration;
 
+    public static Finder<Long, Project> find = new Finder<Long, Project>(Project.class);
+
     public Project(Long id, String name, Task[] tasks, Customer customer, int duration) {
         this.id = id;
         this.name = name;

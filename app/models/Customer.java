@@ -29,6 +29,8 @@ public class Customer extends Model{
         this.projects = projects;
     }
 
+    public static Finder<Long, Customer> find = new Finder<Long, Customer>(Customer.class);
+
     public Long getId() {
         return id;
     }

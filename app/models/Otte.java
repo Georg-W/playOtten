@@ -24,6 +24,8 @@ public class Otte extends Model{
         this.tasks = tasks;
     }
 
+    public static Finder<Long, Otte> find = new Finder<Long, Otte>(Otte.class);
+
     public Long getId() {
         return id;
     }

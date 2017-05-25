@@ -1,5 +1,9 @@
 package controllers;
 
+import models.Customer;
+import models.Otte;
+import models.Project;
+import models.Worker;
 import play.mvc.*;
 
 import java.util.List;
@@ -17,7 +21,13 @@ public class HomeController extends Controller {
      * <code>GET</code> request with a path of <code>/</code>.
      */
     public Result index() {
-        return ok(views.html.index.render());
+        List<Project> projectList = Project.find.all();
+        List<Otte> ottenList = Otte.find.all();
+        List<Worker> workerList = Worker.find.all();
+        List<Customer> customerList = Customer.find.all();
+
+        return ok(views.html.index.render()
+        );
     }
 
 }

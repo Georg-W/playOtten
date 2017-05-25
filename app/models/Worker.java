@@ -18,6 +18,8 @@ public class Worker extends Model{
     private String prename;
     private String lastname;
 
+    public static Finder<Long, Worker> find = new Finder<Long, Worker>(Worker.class);
+
     public Worker(Long id, Task[] tasks, String prename, String lastname) {
         this.id = id;
         this.tasks = tasks;

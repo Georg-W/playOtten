@@ -16,6 +16,14 @@ public class User extends Model {
     private String email;
     private String password;
 
+    public User(Long id, String email, String password) {
+        this.id = id;
+        this.email = email;
+        this.password = password;
+    }
+
+    public static Finder<Long, User> find = new Finder<Long, User>(User.class);
+
     public Long getId() {
         return id;
     }
