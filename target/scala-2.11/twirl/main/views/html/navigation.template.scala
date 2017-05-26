@@ -69,10 +69,10 @@ Seq[Any](format.raw/*1.4*/("""
 object navigation extends navigation_Scope0.navigation
               /*
                   -- GENERATED --
-                  DATE: Thu May 25 11:02:53 CEST 2017
-                  SOURCE: C:/Users/georg/Documents/projects/otten/otten/app/views/navigation.scala.html
-                  HASH: 3c79f5c92703bbe93a500c968359c2fbf991c280
-                  MATRIX: 748->1|844->3|872->5|935->42|949->48|992->71|1073->126|1087->132|1134->159|1220->218|1235->224|1282->250|1367->308|1382->314|1427->338|1510->394|1525->400|1574->428
+                  DATE: Fri May 26 11:21:51 CEST 2017
+                  SOURCE: C:/Users/Julian/Documents/GitHub/playOtten/app/views/navigation.scala.html
+                  HASH: d676c9697dae3595ded8fd3e0541ac87b1ffa552
+                  MATRIX: 748->1|844->3|874->7|938->45|952->51|995->74|1079->132|1093->138|1140->165|1229->227|1244->233|1291->259|1379->320|1394->326|1439->350|1525->409|1540->415|1589->443
                   LINES: 27->1|32->1|34->3|35->4|35->4|35->4|38->7|38->7|38->7|41->10|41->10|41->10|44->13|44->13|44->13|47->16|47->16|47->16
                   -- GENERATED --
               */

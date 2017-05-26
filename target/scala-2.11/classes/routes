@@ -5,6 +5,7 @@
 #Forms
 GET     /                           controllers.FormController.loginUser()
 GET     /project                    controllers.FormController.addProject()
+GET     /worker                     controllers.FormController.addWorker()
 
 #Home
 GET     /home                       controllers.HomeController.index()
@@ -18,6 +19,7 @@ GET     /otten                      controllers.OttenController.index()
 
 #Workers
 GET     /workers                    controllers.WorkersController.index()
+POST    /workers                    controllers.WorkersController.create()
 
 #Costumers
 GET     /customers                  controllers.CustomersController.index()

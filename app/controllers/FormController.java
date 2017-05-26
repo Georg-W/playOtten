@@ -4,6 +4,7 @@ import com.google.inject.Inject;
 import models.Customer;
 import models.Project;
 import models.User;
+import models.Worker;
 import play.data.Form;
 import play.data.FormFactory;
 import play.mvc.Controller;
@@ -26,4 +27,10 @@ public class FormController extends Controller {
         Form<Project> projectForm = formFactory.form(Project.class);
         return ok(views.html.addProject.render(projectForm, customerList));
     }
+
+    public Result addWorker(){
+        Form<Worker> workerForm = formFactory.form(Worker.class);
+        return ok(views.html.addWorker.render(workerForm));
+    }
+
 }

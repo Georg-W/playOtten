@@ -9,12 +9,15 @@
                     <thead>
                         <tr>
                             <td>Vorname</td>
+                            <td>Nachname</td>
                         </tr>
+
                     </thead>
                     <tbody>
                     @for(worker <- workerList){
                         <tr>
                             <td>@worker.getPrename()</td>
+                            <td>@worker.getLastname()</td>
                         </tr>
                     }
                     </tbody>
@@ -27,4 +30,9 @@
             Kein Worker vorhanden
         </div>
     }
+    <div class="row add-item">
+        <div class="col-xs-2">
+            <a href="@routes.FormController.addWorker()" class="btn btn-success"><i class="fa fa-plus-square fa-2x" aria-hidden="true"></i></a>
+        </div>
+    </div>
 }

@@ -40,24 +40,32 @@ Seq[Any](format.raw/*1.28*/("""
                     <thead>
                         <tr>
                             <td>Vorname</td>
+                            <td>Nachname</td>
                         </tr>
+
                     </thead>
                     <tbody>
-                    """),_display_(/*15.22*/for(worker <- workerList) yield /*15.47*/{_display_(Seq[Any](format.raw/*15.48*/("""
-                        """),format.raw/*16.25*/("""<tr>
-                            <td>"""),_display_(/*17.34*/worker/*17.40*/.getPrename()),format.raw/*17.53*/("""</td>
+                    """),_display_(/*17.22*/for(worker <- workerList) yield /*17.47*/{_display_(Seq[Any](format.raw/*17.48*/("""
+                        """),format.raw/*18.25*/("""<tr>
+                            <td>"""),_display_(/*19.34*/worker/*19.40*/.getPrename()),format.raw/*19.53*/("""</td>
+                            <td>"""),_display_(/*20.34*/worker/*20.40*/.getLastname()),format.raw/*20.54*/("""</td>
                         </tr>
-                    """)))}),format.raw/*19.22*/("""
-                    """),format.raw/*20.21*/("""</tbody>
+                    """)))}),format.raw/*22.22*/("""
+                    """),format.raw/*23.21*/("""</tbody>
                 </table>
             </div>
 
         </div>
-    """)))}/*25.7*/else/*25.12*/{_display_(Seq[Any](format.raw/*25.13*/("""
-        """),format.raw/*26.9*/("""<div class="project-item">
+    """)))}/*28.7*/else/*28.12*/{_display_(Seq[Any](format.raw/*28.13*/("""
+        """),format.raw/*29.9*/("""<div class="project-item">
             Kein Worker vorhanden
         </div>
-    """)))}),format.raw/*29.6*/("""
+    """)))}),format.raw/*32.6*/("""
+    """),format.raw/*33.5*/("""<div class="row add-item">
+        <div class="col-xs-2">
+            <a href=""""),_display_(/*35.23*/routes/*35.29*/.FormController.addWorker()),format.raw/*35.56*/("""" class="btn btn-success"><i class="fa fa-plus-square fa-2x" aria-hidden="true"></i></a>
+        </div>
+    </div>
 """)))}))
       }
     }
@@ -78,11 +86,11 @@ Seq[Any](format.raw/*1.28*/("""
 object workers extends workers_Scope0.workers
               /*
                   -- GENERATED --
-                  DATE: Thu May 25 15:15:30 CEST 2017
-                  SOURCE: C:/Users/georg/Documents/projects/otten/otten/app/views/workers.scala.html
-                  HASH: 1c47d9f6d19584ea60bbe928b616f4d6ed7d406f
-                  MATRIX: 755->1|876->27|906->32|929->47|967->48|999->54|1047->77|1080->102|1119->104|1155->114|1505->437|1546->462|1585->463|1639->489|1705->528|1720->534|1754->547|1844->606|1894->628|1991->708|2004->713|2043->714|2080->724|2194->808
-                  LINES: 27->1|32->1|34->3|34->3|34->3|35->4|36->5|36->5|36->5|37->6|46->15|46->15|46->15|47->16|48->17|48->17|48->17|50->19|51->20|56->25|56->25|56->25|57->26|60->29
+                  DATE: Fri May 26 14:02:00 CEST 2017
+                  SOURCE: C:/Users/Julian/Documents/GitHub/playOtten/app/views/workers.scala.html
+                  HASH: 1748a3f45d5a8c6a5c32dc0373ed04a09d9e6e36
+                  MATRIX: 755->1|876->27|906->32|929->47|967->48|999->54|1047->77|1080->102|1119->104|1155->114|1554->486|1595->511|1634->512|1688->538|1754->577|1769->583|1803->596|1870->636|1885->642|1920->656|2010->715|2060->737|2157->817|2170->822|2209->823|2246->833|2360->917|2393->923|2502->1005|2517->1011|2565->1038
+                  LINES: 27->1|32->1|34->3|34->3|34->3|35->4|36->5|36->5|36->5|37->6|48->17|48->17|48->17|49->18|50->19|50->19|50->19|51->20|51->20|51->20|53->22|54->23|59->28|59->28|59->28|60->29|63->32|64->33|66->35|66->35|66->35
                   -- GENERATED --
               */
           

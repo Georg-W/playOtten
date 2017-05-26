@@ -57,10 +57,10 @@ Seq[Any](format.raw/*1.4*/("""
 object footer extends footer_Scope0.footer
               /*
                   -- GENERATED --
-                  DATE: Sun May 21 21:00:25 CEST 2017
-                  SOURCE: C:/Users/georg/Documents/projects/otten/otten/app/views/footer.scala.html
-                  HASH: 05391ce0fc1d9f993b8666bb46f6d58aee385348
-                  MATRIX: 740->1|836->3|864->5
+                  DATE: Fri May 26 11:21:51 CEST 2017
+                  SOURCE: C:/Users/Julian/Documents/GitHub/playOtten/app/views/footer.scala.html
+                  HASH: 74d67d9038976dc16e51a466f6bee6d96df47005
+                  MATRIX: 740->1|836->3|866->7
                   LINES: 27->1|32->1|34->3
                   -- GENERATED --
               */

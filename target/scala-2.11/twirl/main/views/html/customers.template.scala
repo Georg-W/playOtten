@@ -79,8 +79,8 @@ Seq[Any](format.raw/*1.32*/("""
 object customers extends customers_Scope0.customers
               /*
                   -- GENERATED --
-                  DATE: Thu May 25 15:55:27 CEST 2017
-                  SOURCE: C:/Users/georg/Documents/projects/otten/otten/app/views/customers.scala.html
+                  DATE: Fri May 26 11:21:51 CEST 2017
+                  SOURCE: C:/Users/Julian/Documents/GitHub/playOtten/app/views/customers.scala.html
                   HASH: 72eeba0083a43ee5e7813cd8f30d4c328bfe81f0
                   MATRIX: 761->1|886->31|916->36|940->52|978->53|1010->59|1059->83|1094->110|1133->112|1169->122|1516->442|1561->471|1600->472|1654->498|1720->537|1737->545|1771->558|1863->619|1913->641|2010->721|2023->726|2062->727|2099->737|2216->824
                   LINES: 27->1|32->1|34->3|34->3|34->3|35->4|36->5|36->5|36->5|37->6|46->15|46->15|46->15|47->16|48->17|48->17|48->17|51->20|52->21|57->26|57->26|57->26|58->27|61->30

@@ -85,8 +85,8 @@ Seq[Any](format.raw/*1.30*/("""
 object projects extends projects_Scope0.projects
               /*
                   -- GENERATED --
-                  DATE: Thu May 25 15:55:27 CEST 2017
-                  SOURCE: C:/Users/georg/Documents/projects/otten/otten/app/views/projects.scala.html
+                  DATE: Fri May 26 11:21:51 CEST 2017
+                  SOURCE: C:/Users/Julian/Documents/GitHub/playOtten/app/views/projects.scala.html
                   HASH: 8653ebd66d767b66d21322219eb5be191d018cdc
                   MATRIX: 758->1|881->29|911->34|935->50|973->51|1005->57|1054->81|1088->107|1127->109|1163->119|1510->439|1553->466|1592->467|1646->493|1712->532|1728->539|1759->549|1851->610|1901->632|1998->712|2011->717|2050->718|2087->728|2202->813|2235->819|2344->901|2359->907|2408->935
                   LINES: 27->1|32->1|34->3|34->3|34->3|35->4|36->5|36->5|36->5|37->6|46->15|46->15|46->15|47->16|48->17|48->17|48->17|51->20|52->21|57->26|57->26|57->26|58->27|61->30|62->31|64->33|64->33|64->33

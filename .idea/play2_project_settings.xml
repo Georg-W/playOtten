@@ -3,10 +3,17 @@
   <component name="Play2ExcludedModulesSettings">
     <option name="INFO">
       <map>
+        <entry key="otten">
+          <value>
+            <ProjectSettingsEntry>
+              <option name="playDistrPath" value="$USER_HOME$/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.14.jar" />
+            </ProjectSettingsEntry>
+          </value>
+        </entry>
         <entry key="root">
           <value>
             <ProjectSettingsEntry>
-              <option name="confDir" value="C:\Users\georg\Documents\projects\warehouse-barebone\warehouse-barebone\app" />
+              <option name="confDir" value="C:\Users\Julian\Documents\GitHub\playOtten\app" />
               <option name="templateImports">
                 <list>
                   <option value="models._" />
@@ -31,14 +38,7 @@
                   <option value="play.libs.F" />
                 </list>
               </option>
-              <option name="uri" value="/C:/Users/georg/Documents/projects/warehouse-barebone/warehouse-barebone" />
-            </ProjectSettingsEntry>
-          </value>
-        </entry>
-        <entry key="warehouse">
-          <value>
-            <ProjectSettingsEntry>
-              <option name="playDistrPath" value="$USER_HOME$/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.5.14.jar" />
+              <option name="uri" value="/C:/Users/Julian/Documents/GitHub/playOtten" />
             </ProjectSettingsEntry>
           </value>
         </entry>

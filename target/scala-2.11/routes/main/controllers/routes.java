@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/georg/Documents/projects/otten/otten/conf/routes
-// @DATE:Thu May 25 16:03:14 CEST 2017
+// @SOURCE:C:/Users/Julian/Documents/GitHub/playOtten/conf/routes
+// @DATE:Fri May 26 13:42:43 CEST 2017
 
 package controllers;
 

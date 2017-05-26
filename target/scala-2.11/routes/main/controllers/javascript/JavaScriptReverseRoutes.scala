@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/georg/Documents/projects/otten/otten/conf/routes
-// @DATE:Thu May 25 16:03:14 CEST 2017
+// @SOURCE:C:/Users/Julian/Documents/GitHub/playOtten/conf/routes
+// @DATE:Fri May 26 13:42:43 CEST 2017
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -15,7 +15,7 @@ import _root_.play.libs.F
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:30
+  // @LINE:32
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -23,7 +23,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:30
+    // @LINE:32
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -35,7 +35,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:23
+  // @LINE:25
   class ReverseCustomersController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -43,7 +43,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:23
+    // @LINE:25
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.CustomersController.index",
       """
@@ -55,7 +55,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:20
+  // @LINE:21
   class ReverseWorkersController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -63,7 +63,17 @@ package controllers.javascript {
     }
 
   
-    // @LINE:20
+    // @LINE:22
+    def create: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.WorkersController.create",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "workers"})
+        }
+      """
+    )
+  
+    // @LINE:21
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.WorkersController.index",
       """
@@ -75,7 +85,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:26
+  // @LINE:28
   class ReverseUserController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -83,7 +93,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:26
+    // @LINE:28
     def create: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.UserController.create",
       """
@@ -95,7 +105,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:10
+  // @LINE:11
   class ReverseHomeController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -103,7 +113,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:10
+    // @LINE:11
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.index",
       """
@@ -143,9 +153,19 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:8
+    def addWorker: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.FormController.addWorker",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "worker"})
+        }
+      """
+    )
+  
   }
 
-  // @LINE:13
+  // @LINE:14
   class ReverseProjectsController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -153,7 +173,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:14
+    // @LINE:15
     def create: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ProjectsController.create",
       """
@@ -163,7 +183,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:13
+    // @LINE:14
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ProjectsController.index",
       """
@@ -175,7 +195,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:17
+  // @LINE:18
   class ReverseOttenController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -183,7 +203,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:17
+    // @LINE:18
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.OttenController.index",
       """
